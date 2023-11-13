@@ -1,16 +1,74 @@
-*{
+* {
     box-sizing: border-box;
 }
+header {
+    width: 100%;
+    height: 100px;
+    padding: 0;
+    margin: 0;
+    margin-top: 0; 
+    background: url(imagenes/layout.png);
+}
+
 body{
  background-color: rgb(230, 230, 230);
- width: 90%;
-margin: auto;
-font-family: monospace;
+ width: 100%;
+margin:auto;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 }
 h1{
     color: black;
     text-align: center;
 }
+
+.rectangulo {
+    width: 100%;
+    height: auto; /* Se ajusta automáticamente al contenido */
+    background: linear-gradient(rgba(255,255,255,0), rgb(220, 219, 219));
+    margin: 0 auto;
+    padding: 20px; /* Agregamos un poco de espacio alrededor del rectángulo */
+    box-sizing: border-box;
+}
+
+.imagen-con-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.imagen {
+    margin-bottom: 20px; /* Espacio entre la imagen y el texto */
+}
+
+.texto p {
+    max-width: 100%; /* Aprovechamos todo el ancho disponible */
+    font-size: 16px; /* Tamaño de fuente base */
+    margin-bottom: 10px; /* Espacio entre párrafos */
+}
+
+.contenedor {
+    text-align: center; /* Alinea los enlaces al centro */
+}
+
+.enlace {
+    color: palevioletred;
+    display: block;
+    margin-bottom: 10px; /* Espacio entre enlaces */
+    /* Otros estilos para los enlaces si son necesarios */
+}
+
+/* Media queries para hacer ajustes en pantallas más pequeñas */
+@media (max-width: 768px) {
+    .rectangulo {
+        padding: 10px; /* Reducimos el espacio alrededor del rectángulo */
+    }
+
+    .texto p {
+        font-size: 14px; /* Reducimos el tamaño de fuente en pantallas pequeñas */
+    }
+}
+
 
 .gallery-container{
 display: grid;
